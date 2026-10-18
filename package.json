@@ -1,10 +1,11 @@
 {
   "name": "canvaskeep-mcp",
-  "version": "0.6.1",
+  "version": "0.6.2",
   "description": "MCP server for CanvasKeep - generate Excalidraw diagrams from structured graphs",
+  "mcpName": "io.github.CanvasKeep/canvaskeep-mcp",
   "type": "module",
   "bin": {
-    "canvaskeep-mcp": "./dist/index.js"
+    "canvaskeep-mcp": "dist/index.js"
   },
   "scripts": {
     "build": "tsc",

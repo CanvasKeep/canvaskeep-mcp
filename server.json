@@ -1,0 +1,46 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.CanvasKeep/canvaskeep-mcp",
+  "title": "CanvasKeep",
+  "description": "Create and edit Excalidraw diagrams in your CanvasKeep workspace, with auto-layout and folders.",
+  "websiteUrl": "https://canvaskeep.com",
+  "repository": {
+    "url": "https://github.com/CanvasKeep/canvaskeep-mcp",
+    "source": "github"
+  },
+  "version": "0.6.2",
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "canvaskeep-mcp",
+      "version": "0.6.2",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "CANVASKEEP_API_KEY",
+          "description": "API key from your CanvasKeep dashboard (profile menu, API Keys)",
+          "isRequired": true,
+          "isSecret": true,
+          "format": "string"
+        },
+        {
+          "name": "CANVASKEEP_MASTER_KEY",
+          "description": "Needed to read or edit encrypted diagrams. Copy it from canvaskeep.com/dashboard/encryption",
+          "isRequired": false,
+          "isSecret": true,
+          "format": "string"
+        },
+        {
+          "name": "CANVASKEEP_API_URL",
+          "description": "API base URL, override for local development",
+          "isRequired": false,
+          "isSecret": false,
+          "format": "string",
+          "default": "https://canvaskeep.com"
+        }
+      ]
+    }
+  ]
+}
