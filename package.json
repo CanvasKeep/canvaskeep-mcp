@@ -1,0 +1,46 @@
+{
+  "name": "canvaskeep-mcp",
+  "version": "0.6.1",
+  "description": "MCP server for CanvasKeep - generate Excalidraw diagrams from structured graphs",
+  "type": "module",
+  "bin": {
+    "canvaskeep-mcp": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "start": "node dist/index.js",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.1",
+    "zod": "^3.24.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.0",
+    "@types/node": "^20.0.0"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "license": "MIT",
+  "homepage": "https://canvaskeep.com",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CanvasKeep/canvaskeep-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/CanvasKeep/canvaskeep-mcp/issues"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "excalidraw",
+    "diagrams",
+    "canvaskeep",
+    "claude",
+    "ai"
+  ]
+}
