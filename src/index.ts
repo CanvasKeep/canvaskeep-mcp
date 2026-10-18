@@ -28,7 +28,7 @@ const client = new CanvasKeepClient(apiUrl, apiKey, masterKey);
 
 const server = new McpServer({
   name: "canvaskeep",
-  version: "0.6.0",
+  version: "0.6.2",
 });
 
 server.tool(
